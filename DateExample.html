@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DATE</title>
+	<style type="text/css">
+		#dt{
+			color: palevioletred;
+			text-align: center;
+			margin-top: 30%;
+			font-size: 90px;
+			font-family: Arial;
+			text-shadow: 0px 0px 50px orangered;
+			-webkit-text-stroke: 2px black;
+		}
+	</style>
+</head>
+<body>
+	<h1 id="dt">00/00/0000</h1>
+	<script type="text/javascript">
+		let dt = document.getElementById("dt");
+
+		let date = new Date();
+		let day = date.getDate();
+		let month = date.getMonth()+1;
+		let year = date.getFullYear();
+		dt.innerHTML = `${day}/${month}/${year}`
+	</script>
+
+</body>
+</html>
